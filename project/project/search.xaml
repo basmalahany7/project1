@@ -1,0 +1,24 @@
+﻿<Page x:Class="project.search"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="search">
+
+    <Grid Background="#FFF4E8E8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Style="{StaticResource label}" Content="City" HorizontalAlignment="Left" Margin="66,62,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="cc" Style="{StaticResource textbox}" HorizontalAlignment="Left" Margin="153,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Style="{StaticResource button}" Content="Search" HorizontalAlignment="Left" Margin="664,55,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click"/>
+        <DataGrid x:Name="datag" Grid.Column="0" Grid.Row="1"></DataGrid>
+    </Grid>
+</Page>
